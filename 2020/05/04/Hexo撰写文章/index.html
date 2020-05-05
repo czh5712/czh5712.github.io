@@ -9,19 +9,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo撰写文章 | Blog-cai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在利用 Hexo 框架搭建一个属于我们自己的博客网站后，下面我们就来谈谈怎样在网站上书写我们的第一篇博客吧 创建文章在站点文件夹中打开 git bash，输入如下命令创建文章，其中 title 为文章的标题 1$ hexo new &quot;My New title&quot;（title是你创建的文件的标题，也可以不带双引号）">
+  <meta name="description" content="Hexo在利用 Hexo 框架搭建一个属于我们自己的博客网站后，下面我们就来谈谈怎样在网站上书写我们的第一篇博客吧 创建文章在站点文件夹中打开 git bash，输入如下命令创建文章，其中 title 为文章的标题 1$ hexo new &quot;My New title&quot;（title是你创建的文件的标题，也可以不带双引号）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo撰写文章">
 <meta property="og:url" content="http://yoursite.com/2020/05/04/Hexo%E6%92%B0%E5%86%99%E6%96%87%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Blog-cai">
-<meta property="og:description" content="在利用 Hexo 框架搭建一个属于我们自己的博客网站后，下面我们就来谈谈怎样在网站上书写我们的第一篇博客吧 创建文章在站点文件夹中打开 git bash，输入如下命令创建文章，其中 title 为文章的标题 1$ hexo new &quot;My New title&quot;（title是你创建的文件的标题，也可以不带双引号）">
+<meta property="og:description" content="Hexo在利用 Hexo 框架搭建一个属于我们自己的博客网站后，下面我们就来谈谈怎样在网站上书写我们的第一篇博客吧 创建文章在站点文件夹中打开 git bash，输入如下命令创建文章，其中 title 为文章的标题 1$ hexo new &quot;My New title&quot;（title是你创建的文件的标题，也可以不带双引号）">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-04T11:20:57.000Z">
-<meta property="article:modified_time" content="2020-05-05T05:32:38.507Z">
+<meta property="article:modified_time" content="2020-05-05T09:23:48.642Z">
 <meta property="article:author" content="Caizhihao">
-<meta property="article:tag" content="python学习">
-<meta property="article:tag" content="数据可视化">
-<meta property="article:tag" content="前端基础">
+<meta property="article:tag" content="Yilia">
 <meta name="twitter:card" content="summary">
   
   
@@ -77,77 +75,99 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay"></div>
-<div class="intrude-less">
-	<header id="header" class="inner" style="font-size:15px;;font-weight: 500;">
+        <div class="overlay"></div>
+        <div class="intrude-less">
+            <header id="header" class="inner" style="font-size:15px;;font-weight: 500;">
 
-			
-			<a href="" class="profilepic"><img src="/img/张.jpg" class="js-avatar"></a>
-			
-			
-		</a>
-		<hgroup>
-		  <h1 class="header-author"><a href="">Caizhihao</a></h1>
-		</hgroup>
-		
+                
+                        <a href="" class="profilepic"><img src="/img/张.jpg" class="js-avatar"></a>
+                        
 
-		<nav class="header-menu">
-			<ul>
-			
-				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/archives/">归档</a></li>
-	        
-			</ul>
-			<!-- js给主页，归档等增加图标，不需要刻意注释掉 -->
-			<script>
-				var menu = document.getElementsByClassName('header-menu')[0];
-				var lis = menu.children[0].getElementsByTagName('li');
-				var n = lis.length
-				var menu_icon = new Array()
-				// 这里可以继续写menu_icon[],class名参考font-awesome官网搜寻
-				menu_icon[0]="<i class=\"fa fa-home\" aria-hidden=\"true\"></i> "
-				menu_icon[1]="<i class=\"fa fa-book\" aria-hidden=\"true\"></i> "
-				for (var i = 0; i < n; i++){
-					var temp = lis[i].children[0].innerHTML;
-					lis[i].children[0].innerHTML = menu_icon[i] + temp;
-				}
-			</script>
-		</nav>
-		<nav class="header-smart-menu">
-    		
-    			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)" target="_self">所有文章 </a>
-    			
-			
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)" target="_self">友链 </a>
-    			
-			
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)" target="_self">关于我</a>
-    			
-			
+                            </a>
+                            <hgroup>
+                                <h1 class="header-author">
+                                    <a href="">
+                                        Caizhihao
+                                    </a>
+                                </h1>
+                            </hgroup>
+                            
 
-		</nav>
-		<nav class="header-nav">
-			<div class="social">
-				
-					<a class="csdn" target="_blank" href="#" title="csdn"><i class="icon-csdn"></i></a>
-		        
-					<a class="bilibili" target="_blank" href="#" title="bilibili"><i class="icon-bilibili"></i></a>
-		        
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
-		        
-					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
-		        
-			</div>
-		</nav>
-	</header>
-</div>
+                                    <nav class="header-menu">
+                                        <ul>
+                                            
+                                                <li>
+                                                    <a href="/">
+                                                        主页
+                                                    </a>
+                                                </li>
+                                                
+                                                <li>
+                                                    <a href="/archives/">
+                                                        归档
+                                                    </a>
+                                                </li>
+                                                
+                                        </ul>
+                                        <!-- js给主页，归档等增加图标，不需要刻意注释掉 -->
+                                        <script>
+                                            var menu = document.getElementsByClassName('header-menu')[0];
+                                            var lis = menu.children[0].getElementsByTagName('li');
+                                            var n = lis.length
+                                            var menu_icon = new Array()
+                                                // 这里可以继续写menu_icon[],class名参考font-awesome官网搜寻
+                                            menu_icon[0] = "<i class=\"fa fa-home\" aria-hidden=\"true\"></i> "
+                                            menu_icon[1] = "<i class=\"fa fa-book\" aria-hidden=\"true\"></i> "
+                                            for (var i = 0; i < n; i++) {
+                                                var temp = lis[i].children[0].innerHTML;
+                                                lis[i].children[0].innerHTML = menu_icon[i] + temp;
+                                            }
+                                        </script>
+                                    </nav>
+                                    <nav style="color: coral;font-weight:bold;font-size:16px;">
+                                        总文章数
+                                        2
+                                    </nav>
+                                    <nav class="header-smart-menu">
+                                        
+                                            
+                                                <a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)" target="_self">
+                                                    所有文章 
+                                                </a>
+                                                
+                                                    
+                                            
+                                                <a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)" target="_self">
+                                                    友链 
+                                                </a>
+                                                
+                                                    
+                                            
+                                                <a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)" target="_self">
+                                                    关于我
+                                                </a>
+                                                
+                                                    
 
+                                    </nav>
+                                    <nav class="header-nav">
+                                        <div class="social">
+                                            
+                                                <a class="csdn" target="_blank" href="#" title="csdn"><i class="icon-csdn"></i></a>
+                                                
+                                                <a class="bilibili" target="_blank" href="#" title="bilibili"><i class="icon-bilibili"></i></a>
+                                                
+                                                <a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+                                                
+                                                <a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
+                                                
+                                                <a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
+                                                
+                                        </div>
+                                    </nav>
+
+            </header>
+        </div>
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       <nav id="mobile-nav">
@@ -210,51 +230,96 @@
           </div>
           <div id="js-content" class="content-ll">
             <article id="post-Hexo撰写文章" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
+    <div class="article-inner">
         
+            <header class="article-header">
+                
   
     <h1 class="article-title" itemprop="name">
       Hexo撰写文章
     </h1>
   
 
-        
-        <a href="/2020/05/04/Hexo%E6%92%B0%E5%86%99%E6%96%87%E7%AB%A0/" class="archive-article-date">
+                    
+                        <a href="/2020/05/04/Hexo%E6%92%B0%E5%86%99%E6%96%87%E7%AB%A0/" class="archive-article-date">
   	<time datetime="2020-05-04T11:20:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
 </a>
-        
-        
-          <div style="margin-top:10px;margin-bottom:-15px;">
-  
-    
-  
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-bar-chart" aria-hidden="true"></i>
-      <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
-      <span class="post-count" style="font-size: 14px;color: navy">1.4k</span>
-    </span>
-  </span>
-  
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="fa fa-clock-o" aria-hidden="true"></i>
-      <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
-      <span class="post-count" style="font-size: 14px;color: navy">5分</span>
-    </span>
-  </span>
-</div>
-          
 
-        
-      </header>
+                            
+                                <div style="margin-top:10px;margin-bottom:-15px;">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在利用 Hexo 框架搭建一个属于我们自己的博客网站后，下面我们就来谈谈怎样在网站上书写我们的第一篇博客吧</p>
+        
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
+                    
+                        <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">1.4k</span>
+                        </span>
+                        </span>
+
+                        <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">5分</span>
+                        </span>
+                        </span>
+</div>
+                                    
+
+                                        
+            </header>
+            
+                <!-- 目录内容 -->
+                
+                    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+                        <span class="btn-bg"></span>
+                        <span class="btn-text">文章导航</span>
+                    </p>
+                    <div id="toc-article" class="toc-article">
+                        <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+                        <strong class="toc-title">文章目录</strong>
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo"><span class="toc-number">1.</span> <span class="toc-text">Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建文章"><span class="toc-number">1.1.</span> <span class="toc-text">创建文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编写文档（基于Markdown）"><span class="toc-number">1.2.</span> <span class="toc-text">编写文档（基于Markdown）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1、Markdown-简介"><span class="toc-number">1.3.</span> <span class="toc-text">1、Markdown 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、Markdown-语法"><span class="toc-number">1.4.</span> <span class="toc-text">2、Markdown 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）标题"><span class="toc-number">1.4.1.</span> <span class="toc-text">（1）标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法："><span class="toc-number">1.4.1.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）粗体、斜体、删除线和下划线"><span class="toc-number">1.4.2.</span> <span class="toc-text">（2）粗体、斜体、删除线和下划线</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-1"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）引用块"><span class="toc-number">1.4.3.</span> <span class="toc-text">（3）引用块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（4）代码块"><span class="toc-number">1.4.4.</span> <span class="toc-text">（4）代码块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-2"><span class="toc-number">1.4.4.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（5）公式块"><span class="toc-number">1.4.5.</span> <span class="toc-text">（5）公式块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-3"><span class="toc-number">1.4.5.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（6）公式块"><span class="toc-number">1.4.6.</span> <span class="toc-text">（6）公式块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-4"><span class="toc-number">1.4.6.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（7）列表"><span class="toc-number">1.4.7.</span> <span class="toc-text">（7）列表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-5"><span class="toc-number">1.4.7.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（8）表格"><span class="toc-number">1.4.8.</span> <span class="toc-text">（8）表格</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-6"><span class="toc-number">1.4.8.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（9）超链接"><span class="toc-number">1.4.9.</span> <span class="toc-text">（9）超链接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-7"><span class="toc-number">1.4.9.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（10）图片"><span class="toc-number">1.4.10.</span> <span class="toc-text">（10）图片</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-8"><span class="toc-number">1.4.10.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、Markdown-语法-1"><span class="toc-number">1.5.</span> <span class="toc-text">2、Markdown 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）模板设置"><span class="toc-number">1.5.1.</span> <span class="toc-text">（1）模板设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）头部设置"><span class="toc-number">1.5.2.</span> <span class="toc-text">（2）头部设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）首页显示"><span class="toc-number">1.5.3.</span> <span class="toc-text">（3）首页显示</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、部署发布"><span class="toc-number">1.6.</span> <span class="toc-text">三、部署发布</span></a></li></ol></li></ol>
+                    </div>
+                    <script type="text/javascript">
+                        function showToc() {
+                            var toc_article = document.getElementById("toc-article");
+                            var show_toc_btn = document.getElementById("show-toc-btn");
+                            toc_article.setAttribute("style", "display:block");
+                            show_toc_btn.setAttribute("style", "display:none");
+                        };
+
+                        function showBtn() {
+                            var toc_article = document.getElementById("toc-article");
+                            var show_toc_btn = document.getElementById("show-toc-btn");
+                            toc_article.setAttribute("style", "display:none");
+                            show_toc_btn.setAttribute("style", "display:block");
+                        };
+                    </script>
+                    
+                        <!-- 目录内容结束 -->
+                        <div class="article-entry" itemprop="articleBody">
+
+                            <!-- 文章头增加转载声明 -->
+
+                            
+                                
+                                        <div class="topdeclare" hidden="hidden"></div>
+                                        
+
+                                            <!-- 文章头增加转载声明结束 -->
+                                            
+                                                                <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p>在利用 Hexo 框架搭建一个属于我们自己的博客网站后，下面我们就来谈谈怎样在网站上书写我们的第一篇博客吧</p>
 <h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>在站点文件夹中打开 git bash，输入如下命令创建文章，其中 <span style="color:Hotpink">title</span> 为文章的标题</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New title"</span>（title是你创建的文件的标题，也可以不带双引号）</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
@@ -349,11 +414,11 @@ $$</code></pre><p><strong>Typora 快捷键：</strong> Ctrl+Shift+M</p>
 <p><strong>建议：</strong> 在使用 <font color=hotpink>hexo g</font> 部署之后，可以先使用 <font color=hotpink>hexo s</font> 运行本地站点，然后在浏览器输入地址 <a href="http://lacolhost:4000/" target="_blank" rel="noopener">http://lacolhost:4000/</a> 查看运行结果，检查无误后再使用 <font color=hotpink>hexo d</font> 发布</p>
 <p>原文链接 <a href="https://blog.csdn.net/wsmrzx/article/details/81478945" target="_blank" rel="noopener">https://blog.csdn.net/wsmrzx/article/details/81478945</a></p>
 
-      
+                                                                    
 
-      <!-- 版权声明 -->
-        
-          <!--添加版权声明-->
+                                                                        <!-- 版权声明 -->
+                                                                        
+                                                                            <!--添加版权声明-->
 
 
 <!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
@@ -362,16 +427,16 @@ $$</code></pre><p><strong>Typora 快捷键：</strong> Ctrl+Shift+M</p>
 
 <!-- 添加版权声明》 -->
 
-        
-      <!-- 声明结束 -->
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
+                                                                                
+                                                                                    <!-- 声明结束 -->
+                                                                                    
+                                                                                        <div class="page-reward">
+                                                                                            <a href="javascript:;" class="page-reward-btn tooltip-top">
+                                                                                                <div class="tooltip tooltip-east">
+                                                                                                    <span class="tooltip-item">
               赏
             </span>
-            <span class="tooltip-content">
+                                                                                                    <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
                   <p class="reward-p"><i class="icon icon-quo-left"></i>创作不易，感谢支持<i class="icon icon-quo-right"></i></p>
@@ -380,32 +445,43 @@ $$</code></pre><p><strong>Typora 快捷键：</strong> Ctrl+Shift+M</p>
                     <div class="reward-box-item">
                       <img class="reward-img" src="/img/alipay.png">
                       <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/weixin.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
+                                                                                                </div>
+                                                                                                
+                                                                                                    
+                                                                                                        <div class="reward-box-item">
+                                                                                                            <img class="reward-img" src="/img/weixin.png">
+                                                                                                            <span class="reward-type">微信</span>
+                                                                                                        </div>
+                                                                                                        
+                                                                                        </div>
+                                                                                        </span>
+                                                                                        </span>
+                                                                                        </span>
+                        </div>
+                        </a>
     </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+    
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Yilia</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
-      
+                        
 
-      
-        
+                            
+
+                                    
+                                        
 <div class="share-btn share-icons tooltip-left">
   <div class="tooltip tooltip-east">
     <span class="tooltip-item">
@@ -455,28 +531,30 @@ $$</code></pre><p><strong>Typora 快捷键：</strong> Ctrl+Shift+M</p>
 </div>
 
 <div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
+                                            
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
 </article>
 
-  
-<nav id="article-nav">
-  
-  
-    <a href="/2020/05/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-  <span id="busuanzi_container_page_pv" style="color:#04338c">
+    
+    <nav id="article-nav">
+        
+                
+                    <a href="/2020/05/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+                        <div class="article-nav-title">
+                            Hello World
+                        </div>
+                        <i class="icon-circle-right"></i>
+                    </a>
+                    
+                        <span id="busuanzi_container_page_pv" style="color:#ee5c08">
         本文阅读量: <span id="busuanzi_value_page_pv"></span>次
- </span>
-</nav>
-
-
-<aside class="wrap-side-operation">
+                        </span>
+    </nav>
+    
+        
+            <aside class="wrap-side-operation">
     <div class="mod-side-operation">
         
         <div class="jump-container" id="js-jump-container" style="display:none;">
@@ -489,42 +567,56 @@ $$</code></pre><p><strong>Typora 快捷键：</strong> Ctrl+Shift+M</p>
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <span style="font-size: 20px;font-weight: bold;">文章目录</span>
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo"><span class="toc-number">1.</span> <span class="toc-text">Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建文章"><span class="toc-number">1.1.</span> <span class="toc-text">创建文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编写文档（基于Markdown）"><span class="toc-number">1.2.</span> <span class="toc-text">编写文档（基于Markdown）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1、Markdown-简介"><span class="toc-number">1.3.</span> <span class="toc-text">1、Markdown 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、Markdown-语法"><span class="toc-number">1.4.</span> <span class="toc-text">2、Markdown 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）标题"><span class="toc-number">1.4.1.</span> <span class="toc-text">（1）标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法："><span class="toc-number">1.4.1.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）粗体、斜体、删除线和下划线"><span class="toc-number">1.4.2.</span> <span class="toc-text">（2）粗体、斜体、删除线和下划线</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-1"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）引用块"><span class="toc-number">1.4.3.</span> <span class="toc-text">（3）引用块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（4）代码块"><span class="toc-number">1.4.4.</span> <span class="toc-text">（4）代码块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-2"><span class="toc-number">1.4.4.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（5）公式块"><span class="toc-number">1.4.5.</span> <span class="toc-text">（5）公式块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-3"><span class="toc-number">1.4.5.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（6）公式块"><span class="toc-number">1.4.6.</span> <span class="toc-text">（6）公式块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-4"><span class="toc-number">1.4.6.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（7）列表"><span class="toc-number">1.4.7.</span> <span class="toc-text">（7）列表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-5"><span class="toc-number">1.4.7.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（8）表格"><span class="toc-number">1.4.8.</span> <span class="toc-text">（8）表格</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-6"><span class="toc-number">1.4.8.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（9）超链接"><span class="toc-number">1.4.9.</span> <span class="toc-text">（9）超链接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-7"><span class="toc-number">1.4.9.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（10）图片"><span class="toc-number">1.4.10.</span> <span class="toc-text">（10）图片</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown-语法：-8"><span class="toc-number">1.4.10.1.</span> <span class="toc-text">Markdown 语法：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、Markdown-语法-1"><span class="toc-number">1.5.</span> <span class="toc-text">2、Markdown 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）模板设置"><span class="toc-number">1.5.1.</span> <span class="toc-text">（1）模板设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）头部设置"><span class="toc-number">1.5.2.</span> <span class="toc-text">（2）头部设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）首页显示"><span class="toc-number">1.5.3.</span> <span class="toc-text">（3）首页显示</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、部署发布"><span class="toc-number">1.6.</span> <span class="toc-text">三、部署发布</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
 
+                
+                    
 
-  
-  
-  
+                                
 
-  
+                                        
 
-  
+                                                    
 
-
-
-  
-
+                                                                
           </div>
         </div>
       </div>
       <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-    	<div class="footer-left" style="color:#04338c;">
-    		<i class='fa fa-copyright'></i> 2018-2020 Caizhihao
-    	</div>
-      	<div class="footer-right" style="color:#04338c;">
-          <a href="https://hexo.io" target="_blank"  onmouseover="this.style.color='#4B0082';" onmouseout="this.style.color='#04338c';"> Hexo </a><a href="https://github.com/litten/hexo-theme-yilia" target="_blank"  onmouseover="this.style.color='#4B0082';" onmouseout="this.style.color='#04338c';"> Yilia-qure </a> By <a href="#" target="_blank" onmouseover="this.style.color='#4B0082';" onmouseout="this.style.color='#04338c';"> Destiny </a>
-      	</div>
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left" style="color:#04338c;">
+                <i class='fa fa-copyright'></i> 2018-
+                2020
+                    Caizhihao
+            </div>
+            <div class="footer-right" style="color:#04338c;">
+                <a href="https://hexo.io" target="_blank" onmouseover="this.style.color='#4B0082';" onmouseout="this.style.color='#04338c';"> Hexo </a><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" onmouseover="this.style.color='#4B0082';"
+                    onmouseout="this.style.color='#04338c';"> Yilia-qure </a> By <a href="#" target="_blank" onmouseover="this.style.color='#4B0082';" onmouseout="this.style.color='#04338c';"> Destiny </a>
+            </div>
+        </div>
+        <div class="busuanzi_contain" style="margin:0 auto">
+            <span id="busuanzi_container_site_pv" style="color:#04338c"> 总访问量: <span id="busuanzi_value_site_pv"></span> /</span>
+            <!-- # UV方式，单个用户连续点击 n 篇，记录 1 次记录值 -->
+            <span id="busuanzi_container_site_uv" style="color:#04338c">总访客数: <span id="busuanzi_value_site_uv"></span></span>
+        </div>
     </div>
-    <div class="busuanzi_contain" style="margin:0 auto">
-    <span id="busuanzi_container_site_pv" style="color:#04338c"> 总访问量: <span id="busuanzi_value_site_pv"></span> /</span>
-          <!-- # UV方式，单个用户连续点击 n 篇，记录 1 次记录值 -->
-    <span id="busuanzi_container_site_uv" style="color:#04338c">总访客数: <span id="busuanzi_value_site_uv"></span></span>
-    </div>
-  </div>
 </footer>
     </div>
     <script>
@@ -600,6 +692,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Yilia</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
