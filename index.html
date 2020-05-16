@@ -124,7 +124,7 @@
                                     </nav>
                                     <nav style="color: coral;font-weight:bold;font-size:16px;">
                                         总文章数
-                                        8
+                                        10
                                     </nav>
                                     <nav class="header-smart-menu">
                                         
@@ -229,6 +229,271 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-如何避开变量作用域的陷阱" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/16/%E5%A6%82%E4%BD%95%E9%81%BF%E5%BC%80%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E9%99%B7%E9%98%B1/">Python变量作用域</a>
+    </h1>
+  
+
+                    
+                        <a href="/2020/05/16/%E5%A6%82%E4%BD%95%E9%81%BF%E5%BC%80%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E9%99%B7%E9%98%B1/" class="archive-article-date">
+  	<time datetime="2020-05-16T08:18:15.853Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-16</time>
+</a>
+
+                            
+                                <div style="margin-top:10px;margin-bottom:-15px;">
+    
+        
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
+                    
+                        <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">2k</span>
+                        </span>
+                        </span>
+
+                        <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">8分</span>
+                        </span>
+                        </span>
+</div>
+                                    
+
+                                        
+            </header>
+            
+                <!-- 目录内容 -->
+                
+                        <!-- 目录内容结束 -->
+                        <div class="article-entry" itemprop="articleBody">
+
+                            <!-- 文章头增加转载声明 -->
+
+                            
+                                
+                                        <div class="topdeclare" hidden="hidden"></div>
+                                        
+
+                                            <!-- 文章头增加转载声明结束 -->
+                                            
+                                                <p>讲这个topic之前，我们先来说一个例子</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">x=<span class="number">99</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func1</span><span class="params">()</span>:</span></span><br><span class="line">	<span class="keyword">global</span> x</span><br><span class="line">	x=<span class="number">88</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func2</span><span class="params">()</span>:</span></span><br><span class="line">	<span class="keyword">global</span> x</span><br><span class="line">	x=<span class="number">77</span></span><br></pre></td></tr></table></figure>
+                                                    
+                                                            
+
+                                                                        <!-- 版权声明 -->
+                                                                        
+                                                                            <!--添加版权声明-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <ul class="copyright" hidden="hidden"></ul>
+
+<!-- 添加版权声明》 -->
+
+                                                                                
+                                                                                    <!-- 声明结束 -->
+                                                                                    
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                        
+
+                            
+                                <p class="article-more-link">
+                                    <a class="article-more-a" href="/2020/05/16/%E5%A6%82%E4%BD%95%E9%81%BF%E5%BC%80%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E9%99%B7%E9%98%B1/">
+                                        展开全文 >></a>
+                                </p>
+                                
+
+                                    
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
+</article>
+
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+                
+  
+    <article id="post-Python中的返回" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/15/Python%E4%B8%AD%E7%9A%84%E8%BF%94%E5%9B%9E/">Python 中 3 个不可思议的返回</a>
+    </h1>
+  
+
+                    
+                        <a href="/2020/05/15/Python%E4%B8%AD%E7%9A%84%E8%BF%94%E5%9B%9E/" class="archive-article-date">
+  	<time datetime="2020-05-15T09:29:01.793Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-15</time>
+</a>
+
+                            
+                                <div style="margin-top:10px;margin-bottom:-15px;">
+    
+        
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
+                    
+                        <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">584</span>
+                        </span>
+                        </span>
+
+                        <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">2分</span>
+                        </span>
+                        </span>
+</div>
+                                    
+
+                                        
+            </header>
+            
+                <!-- 目录内容 -->
+                
+                        <!-- 目录内容结束 -->
+                        <div class="article-entry" itemprop="articleBody">
+
+                            <!-- 文章头增加转载声明 -->
+
+                            
+                                
+                                        <div class="topdeclare" hidden="hidden"></div>
+                                        
+
+                                            <!-- 文章头增加转载声明结束 -->
+                                            
+                                                <h2 id="第一个：神奇的字典键"><a href="#第一个：神奇的字典键" class="headerlink" title="第一个：神奇的字典键"></a>第一个：神奇的字典键</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">some_dict = &#123;&#125;</span><br><span class="line">some_dict[<span class="number">5.5</span>] = <span class="string">"Ruby"</span></span><br><span class="line">some_dict[<span class="number">5.0</span>] = <span class="string">"JavaScript"</span></span><br><span class="line">some_dict[<span class="number">5</span>] = <span class="string">"Python"</span></span><br><span class="line"></span><br><span class="line">print(some_dict[<span class="number">5.5</span>])</span><br><span class="line">print(some_dict[<span class="number">5.0</span>])</span><br><span class="line">print(some_dict[<span class="number">5</span>])</span><br></pre></td></tr></table></figure>
+                                                    
+                                                            
+
+                                                                        <!-- 版权声明 -->
+                                                                        
+                                                                            <!--添加版权声明-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <ul class="copyright" hidden="hidden"></ul>
+
+<!-- 添加版权声明》 -->
+
+                                                                                
+                                                                                    <!-- 声明结束 -->
+                                                                                    
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                        
+
+                            
+                                <p class="article-more-link">
+                                    <a class="article-more-a" href="/2020/05/15/Python%E4%B8%AD%E7%9A%84%E8%BF%94%E5%9B%9E/">
+                                        展开全文 >></a>
+                                </p>
+                                
+
+                                    
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
+</article>
+
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+                
+  
     <article id="post-Python字符串" class="article article-type-post  article-index" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -236,7 +501,7 @@
                 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/14/Python%E5%AD%97%E7%AC%A6%E4%B8%B2/">Python字符串</a>
+      <a class="article-title" href="/2020/05/14/Python%E5%AD%97%E7%AC%A6%E4%B8%B2/">Python字符串的基本操作</a>
     </h1>
   
 
@@ -262,7 +527,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
-                        <span class="post-count" style="font-size: 14px;color: navy">809</span>
+                        <span class="post-count" style="font-size: 14px;color: navy">801</span>
                         </span>
                         </span>
 
@@ -294,7 +559,7 @@
 
                                             <!-- 文章头增加转载声明结束 -->
                                             
-                                                <h1 id="Python字符串的基本操作"><a href="#Python字符串的基本操作" class="headerlink" title="Python字符串的基本操作"></a>Python字符串的基本操作</h1><p>日常使用python经常要对文本进行处理，无论是爬虫的数据解析，还是大数据的文本清洗，还是普通文件的处理，都是要用到字符串. Python对字符串的处理内置了很多高效的函数，非常方便功能很强大.下面是我总结的常用的7招，有了这几招就能轻松应对字符串处理.</p>
+                                                <p>日常使用python经常要对文本进行处理，无论是爬虫的数据解析，还是大数据的文本清洗，还是普通文件的处理，都是要用到字符串. Python对字符串的处理内置了很多高效的函数，非常方便功能很强大.下面是我总结的常用的7招，有了这几招就能轻松应对字符串处理.</p>
 <h2 id="1-字符串的连接和合并"><a href="#1-字符串的连接和合并" class="headerlink" title="1.字符串的连接和合并"></a>1.字符串的连接和合并</h2><p>两个字符串可以很方便的通过’+’连接起来</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'hello'</span></span><br><span class="line">str2 = <span class="string">'world'</span></span><br><span class="line">new_str = str1 +<span class="string">' '</span>+ str2</span><br><span class="line">print(new_str)</span><br></pre></td></tr></table></figure>
                                                     
@@ -370,7 +635,7 @@
                 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/13/Python%E9%87%8C%E7%9A%84%E5%AD%97%E5%85%B8/">Python字典</a>
+      <a class="article-title" href="/2020/05/13/Python%E9%87%8C%E7%9A%84%E5%AD%97%E5%85%B8/">Python字典里的5个黑魔法</a>
     </h1>
   
 
@@ -428,7 +693,7 @@
 
                                             <!-- 文章头增加转载声明结束 -->
                                             
-                                                <h1 id="Python字典里的5个黑魔法"><a href="#Python字典里的5个黑魔法" class="headerlink" title="Python字典里的5个黑魔法"></a>Python字典里的5个黑魔法</h1><p>Python里面有3大数据结构：列表，字典和集合.字典是常用的数据结构，里面有一些重要的技巧用法，我把这些都整理到一起,熟练掌握这些技巧之后，对自己的功力大有帮助.</p>
+                                                <p>Python里面有3大数据结构：列表，字典和集合.字典是常用的数据结构，里面有一些重要的技巧用法，我把这些都整理到一起,熟练掌握这些技巧之后，对自己的功力大有帮助.</p>
 <h2 id="1-字典的排序"><a href="#1-字典的排序" class="headerlink" title="1.字典的排序:"></a>1.字典的排序:</h2><p>用万金油sorted()函数</p>
 <p>举一个简单的例子</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">my_dict=&#123;<span class="string">"cc"</span>:<span class="number">100</span>,<span class="string">"aa"</span>:<span class="number">200</span>,<span class="string">"bb"</span>:<span class="number">10</span>&#125;</span><br><span class="line">print(sorted(my_dict.items(),key=<span class="keyword">lambda</span> x:x[<span class="number">0</span>]))<span class="comment">#表示按照key排序</span></span><br></pre></td></tr></table></figure>
@@ -1125,7 +1390,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Yilia</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
         		</li>
       		
 		</ul>
@@ -1390,6 +1655,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Python</a>
