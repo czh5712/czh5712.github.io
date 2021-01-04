@@ -124,7 +124,7 @@
                                     </nav>
                                     <nav style="color: coral;font-weight:bold;font-size:16px;">
                                         总文章数
-                                        12
+                                        24
                                     </nav>
                                     <nav class="header-smart-menu">
                                         
@@ -229,20 +229,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Hexo撰写文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-直接插入排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/04/Hexo%E6%92%B0%E5%86%99%E6%96%87%E7%AB%A0/">Hexo撰写文章</a>
+      <a class="article-title" href="/2020/05/25/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/">经典排序算法之二 直接插入排序</a>
     </h1>
   
 
                     
-                        <a href="/2020/05/04/Hexo%E6%92%B0%E5%86%99%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-05-04T11:20:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-04</time>
+                        <a href="/2020/05/25/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" class="archive-article-date">
+  	<time datetime="2020-05-25T09:50:25.569Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-25</time>
 </a>
 
                             
@@ -262,7 +262,145 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
-                        <span class="post-count" style="font-size: 14px;color: navy">1.4k</span>
+                        <span class="post-count" style="font-size: 14px;color: navy">818</span>
+                        </span>
+                        </span>
+
+                        <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">3分</span>
+                        </span>
+                        </span>
+</div>
+                                    
+
+                                        
+            </header>
+            
+                <!-- 目录内容 -->
+                
+                        <!-- 目录内容结束 -->
+                        <div class="article-entry" itemprop="articleBody">
+
+                            <!-- 文章头增加转载声明 -->
+
+                            
+                                
+                                        <div class="topdeclare" hidden="hidden"></div>
+                                        
+
+                                            <!-- 文章头增加转载声明结束 -->
+                                            
+                                                <p>假设在排序过程中，待排序表L[1…i-1]在某次排序过程中的某一时刻状态如下：</p>
+<p>有序序列L[1…i-1] | L(i) | 无序序列L[i+1…n]</p>
+<p>需将元素L(i)插入到以已有序的子序列L[1…i-1]中，需要执行以下操作（为避免混淆，下面用L[]表示一个表，而用L()表示一个元素）：</p>
+<p>1）查找L(i)在L[1…i-1]中的插入位置k.</p>
+<p>2）将L[k…i-1]中的所有元素依次后移一个位置</p>
+<p>3）将L[i]复制到L(k)</p>
+<p>为了实现对L[1…n]的排序，可以将L(2)~L(n)依次插入到前面已经排好序的子序列中，初始L[1]可以视为一个已经排好序的子序列，上述操作执行n-1次就能得到一个有序的表。</p>
+                                                    
+                                                            
+
+                                                                        <!-- 版权声明 -->
+                                                                        
+                                                                            <!--添加版权声明-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <ul class="copyright" hidden="hidden"></ul>
+
+<!-- 添加版权声明》 -->
+
+                                                                                
+                                                                                    <!-- 声明结束 -->
+                                                                                    
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                        
+
+                            
+                                <p class="article-more-link">
+                                    <a class="article-more-a" href="/2020/05/25/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/">
+                                        展开全文 >></a>
+                                </p>
+                                
+
+                                    
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
+</article>
+
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+                
+  
+    <article id="post-冒泡排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/23/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">经典排序算法之一 冒泡排序</a>
+    </h1>
+  
+
+                    
+                        <a href="/2020/05/23/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" class="archive-article-date">
+  	<time datetime="2020-05-23T14:53:18.433Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-23</time>
+</a>
+
+                            
+                                <div style="margin-top:10px;margin-bottom:-15px;">
+    
+        
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
+                    
+                        <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">1.1k</span>
                         </span>
                         </span>
 
@@ -294,9 +432,7 @@
 
                                             <!-- 文章头增加转载声明结束 -->
                                             
-                                                <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p>在利用 Hexo 框架搭建一个属于我们自己的博客网站后，下面我们就来谈谈怎样在网站上书写我们的第一篇博客吧</p>
-<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>在站点文件夹中打开 git bash，输入如下命令创建文章，其中 <span style="color:Hotpink">title</span> 为文章的标题</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New title"</span>（title是你创建的文件的标题，也可以不带双引号）</span><br></pre></td></tr></table></figure>
+                                                <p>冒泡排序的基本思想就：从后往前（或从前往后）两两比较相邻元素的值，若为逆序（即A[i-1]&gt;A[i]）,则交换他们，直到序列比较完。</p>
                                                     
                                                             
 
@@ -323,7 +459,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
         		</li>
       		
 		</ul>
@@ -333,7 +469,7 @@
 
                             
                                 <p class="article-more-link">
-                                    <a class="article-more-a" href="/2020/05/04/Hexo%E6%92%B0%E5%86%99%E6%96%87%E7%AB%A0/">
+                                    <a class="article-more-a" href="/2020/05/23/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">
                                         展开全文 >></a>
                                 </p>
                                 
@@ -363,32 +499,40 @@
 
                 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Python最容易犯的9种异常错误" class="article article-type-post  article-index" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/02/hello-world/">Hello World</a>
+      <a class="article-title" href="/2020/05/18/Python%E6%9C%80%E5%AE%B9%E6%98%93%E7%8A%AF%E7%9A%849%E7%A7%8D%E5%BC%82%E5%B8%B8%E9%94%99%E8%AF%AF/">最容易犯的9种异常错误,你有没有中招过</a>
     </h1>
   
 
                     
-                        <a href="/2020/05/02/hello-world/" class="archive-article-date">
-  	<time datetime="2020-05-02T03:07:35.129Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-02</time>
+                        <a href="/2020/05/18/Python%E6%9C%80%E5%AE%B9%E6%98%93%E7%8A%AF%E7%9A%849%E7%A7%8D%E5%BC%82%E5%B8%B8%E9%94%99%E8%AF%AF/" class="archive-article-date">
+  	<time datetime="2020-05-18T07:55:36.601Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-18</time>
 </a>
 
                             
                                 <div style="margin-top:10px;margin-bottom:-15px;">
     
         
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
                     
                         <span class="post-time">
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
-                        <span class="post-count" style="font-size: 14px;color: navy">73</span>
+                        <span class="post-count" style="font-size: 14px;color: navy">1.1k</span>
                         </span>
                         </span>
 
@@ -397,7 +541,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
-                        <span class="post-count" style="font-size: 14px;color: navy">1分</span>
+                        <span class="post-count" style="font-size: 14px;color: navy">5分</span>
                         </span>
                         </span>
 </div>
@@ -420,8 +564,10 @@
 
                                             <!-- 文章头增加转载声明结束 -->
                                             
-                                                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+                                                <p>有一些是语法上的错误,比如代码不符合解释器或者编译器的语法</p>
+<p>有一些是参数输入错误,比如应该输入整数,结果却输入一个字符串</p>
+<p>有一些是逻辑上的漏洞,比如不合法的输入或者算法上计算有些问题</p>
+<p>有一些是程序运行错误,比如你要读入文件,而传进来的文件名不存在</p>
                                                     
                                                             
 
@@ -448,7 +594,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Yilia</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		
 		</ul>
@@ -458,7 +604,939 @@
 
                             
                                 <p class="article-more-link">
-                                    <a class="article-more-a" href="/2020/05/02/hello-world/">
+                                    <a class="article-more-a" href="/2020/05/18/Python%E6%9C%80%E5%AE%B9%E6%98%93%E7%8A%AF%E7%9A%849%E7%A7%8D%E5%BC%82%E5%B8%B8%E9%94%99%E8%AF%AF/">
+                                        展开全文 >></a>
+                                </p>
+                                
+
+                                    
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
+</article>
+
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+                
+  
+    <article id="post-Python学习小总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/17/Python%E5%AD%A6%E4%B9%A0%E5%B0%8F%E6%80%BB%E7%BB%93/">Python学习小总结</a>
+    </h1>
+  
+
+                    
+                        <a href="/2020/05/17/Python%E5%AD%A6%E4%B9%A0%E5%B0%8F%E6%80%BB%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2020-05-17T08:30:52.032Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-17</time>
+</a>
+
+                            
+                                <div style="margin-top:10px;margin-bottom:-15px;">
+    
+        
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
+                    
+                        <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">957</span>
+                        </span>
+                        </span>
+
+                        <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">4分</span>
+                        </span>
+                        </span>
+</div>
+                                    
+
+                                        
+            </header>
+            
+                <!-- 目录内容 -->
+                
+                        <!-- 目录内容结束 -->
+                        <div class="article-entry" itemprop="articleBody">
+
+                            <!-- 文章头增加转载声明 -->
+
+                            
+                                
+                                        <div class="topdeclare" hidden="hidden"></div>
+                                        
+
+                                            <!-- 文章头增加转载声明结束 -->
+                                            
+                                                <h1 id="看完这10招，你会有收获的"><a href="#看完这10招，你会有收获的" class="headerlink" title="看完这10招，你会有收获的"></a>看完这10招，你会有收获的</h1><h2 id="1-Python的中拷贝"><a href="#1-Python的中拷贝" class="headerlink" title="1.Python的中拷贝"></a>1.Python的中拷贝</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">b=a</span><br><span class="line">b.append(<span class="number">4</span>)</span><br><span class="line">print(id(a),a)</span><br><span class="line">print(id(b),b)</span><br></pre></td></tr></table></figure>
+                                                    
+                                                            
+
+                                                                        <!-- 版权声明 -->
+                                                                        
+                                                                            <!--添加版权声明-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <ul class="copyright" hidden="hidden"></ul>
+
+<!-- 添加版权声明》 -->
+
+                                                                                
+                                                                                    <!-- 声明结束 -->
+                                                                                    
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                        
+
+                            
+                                <p class="article-more-link">
+                                    <a class="article-more-a" href="/2020/05/17/Python%E5%AD%A6%E4%B9%A0%E5%B0%8F%E6%80%BB%E7%BB%93/">
+                                        展开全文 >></a>
+                                </p>
+                                
+
+                                    
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
+</article>
+
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+                
+  
+    <article id="post-如何避开变量作用域的陷阱" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/16/%E5%A6%82%E4%BD%95%E9%81%BF%E5%BC%80%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E9%99%B7%E9%98%B1/">Python变量作用域</a>
+    </h1>
+  
+
+                    
+                        <a href="/2020/05/16/%E5%A6%82%E4%BD%95%E9%81%BF%E5%BC%80%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E9%99%B7%E9%98%B1/" class="archive-article-date">
+  	<time datetime="2020-05-16T08:18:15.853Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-16</time>
+</a>
+
+                            
+                                <div style="margin-top:10px;margin-bottom:-15px;">
+    
+        
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
+                    
+                        <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">2k</span>
+                        </span>
+                        </span>
+
+                        <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">8分</span>
+                        </span>
+                        </span>
+</div>
+                                    
+
+                                        
+            </header>
+            
+                <!-- 目录内容 -->
+                
+                        <!-- 目录内容结束 -->
+                        <div class="article-entry" itemprop="articleBody">
+
+                            <!-- 文章头增加转载声明 -->
+
+                            
+                                
+                                        <div class="topdeclare" hidden="hidden"></div>
+                                        
+
+                                            <!-- 文章头增加转载声明结束 -->
+                                            
+                                                <p>讲这个topic之前，我们先来说一个例子</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">x=<span class="number">99</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func1</span><span class="params">()</span>:</span></span><br><span class="line">	<span class="keyword">global</span> x</span><br><span class="line">	x=<span class="number">88</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func2</span><span class="params">()</span>:</span></span><br><span class="line">	<span class="keyword">global</span> x</span><br><span class="line">	x=<span class="number">77</span></span><br></pre></td></tr></table></figure>
+                                                    
+                                                            
+
+                                                                        <!-- 版权声明 -->
+                                                                        
+                                                                            <!--添加版权声明-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <ul class="copyright" hidden="hidden"></ul>
+
+<!-- 添加版权声明》 -->
+
+                                                                                
+                                                                                    <!-- 声明结束 -->
+                                                                                    
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                        
+
+                            
+                                <p class="article-more-link">
+                                    <a class="article-more-a" href="/2020/05/16/%E5%A6%82%E4%BD%95%E9%81%BF%E5%BC%80%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%9A%84%E9%99%B7%E9%98%B1/">
+                                        展开全文 >></a>
+                                </p>
+                                
+
+                                    
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
+</article>
+
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+                
+  
+    <article id="post-Python中的返回" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/15/Python%E4%B8%AD%E7%9A%84%E8%BF%94%E5%9B%9E/">Python 中 3 个不可思议的返回</a>
+    </h1>
+  
+
+                    
+                        <a href="/2020/05/15/Python%E4%B8%AD%E7%9A%84%E8%BF%94%E5%9B%9E/" class="archive-article-date">
+  	<time datetime="2020-05-15T09:29:01.793Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-15</time>
+</a>
+
+                            
+                                <div style="margin-top:10px;margin-bottom:-15px;">
+    
+        
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
+                    
+                        <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">584</span>
+                        </span>
+                        </span>
+
+                        <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">2分</span>
+                        </span>
+                        </span>
+</div>
+                                    
+
+                                        
+            </header>
+            
+                <!-- 目录内容 -->
+                
+                        <!-- 目录内容结束 -->
+                        <div class="article-entry" itemprop="articleBody">
+
+                            <!-- 文章头增加转载声明 -->
+
+                            
+                                
+                                        <div class="topdeclare" hidden="hidden"></div>
+                                        
+
+                                            <!-- 文章头增加转载声明结束 -->
+                                            
+                                                <h2 id="第一个：神奇的字典键"><a href="#第一个：神奇的字典键" class="headerlink" title="第一个：神奇的字典键"></a>第一个：神奇的字典键</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">some_dict = &#123;&#125;</span><br><span class="line">some_dict[<span class="number">5.5</span>] = <span class="string">"Ruby"</span></span><br><span class="line">some_dict[<span class="number">5.0</span>] = <span class="string">"JavaScript"</span></span><br><span class="line">some_dict[<span class="number">5</span>] = <span class="string">"Python"</span></span><br><span class="line"></span><br><span class="line">print(some_dict[<span class="number">5.5</span>])</span><br><span class="line">print(some_dict[<span class="number">5.0</span>])</span><br><span class="line">print(some_dict[<span class="number">5</span>])</span><br></pre></td></tr></table></figure>
+                                                    
+                                                            
+
+                                                                        <!-- 版权声明 -->
+                                                                        
+                                                                            <!--添加版权声明-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <ul class="copyright" hidden="hidden"></ul>
+
+<!-- 添加版权声明》 -->
+
+                                                                                
+                                                                                    <!-- 声明结束 -->
+                                                                                    
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                        
+
+                            
+                                <p class="article-more-link">
+                                    <a class="article-more-a" href="/2020/05/15/Python%E4%B8%AD%E7%9A%84%E8%BF%94%E5%9B%9E/">
+                                        展开全文 >></a>
+                                </p>
+                                
+
+                                    
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
+</article>
+
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+                
+  
+    <article id="post-Python字符串" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/14/Python%E5%AD%97%E7%AC%A6%E4%B8%B2/">Python字符串的基本操作</a>
+    </h1>
+  
+
+                    
+                        <a href="/2020/05/14/Python%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="archive-article-date">
+  	<time datetime="2020-05-14T08:36:12.337Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-14</time>
+</a>
+
+                            
+                                <div style="margin-top:10px;margin-bottom:-15px;">
+    
+        
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
+                    
+                        <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">801</span>
+                        </span>
+                        </span>
+
+                        <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">3分</span>
+                        </span>
+                        </span>
+</div>
+                                    
+
+                                        
+            </header>
+            
+                <!-- 目录内容 -->
+                
+                        <!-- 目录内容结束 -->
+                        <div class="article-entry" itemprop="articleBody">
+
+                            <!-- 文章头增加转载声明 -->
+
+                            
+                                
+                                        <div class="topdeclare" hidden="hidden"></div>
+                                        
+
+                                            <!-- 文章头增加转载声明结束 -->
+                                            
+                                                <p>日常使用python经常要对文本进行处理，无论是爬虫的数据解析，还是大数据的文本清洗，还是普通文件的处理，都是要用到字符串. Python对字符串的处理内置了很多高效的函数，非常方便功能很强大.下面是我总结的常用的7招，有了这几招就能轻松应对字符串处理.</p>
+<h2 id="1-字符串的连接和合并"><a href="#1-字符串的连接和合并" class="headerlink" title="1.字符串的连接和合并"></a>1.字符串的连接和合并</h2><p>两个字符串可以很方便的通过’+’连接起来</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'hello'</span></span><br><span class="line">str2 = <span class="string">'world'</span></span><br><span class="line">new_str = str1 +<span class="string">' '</span>+ str2</span><br><span class="line">print(new_str)</span><br></pre></td></tr></table></figure>
+                                                    
+                                                            
+
+                                                                        <!-- 版权声明 -->
+                                                                        
+                                                                            <!--添加版权声明-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <ul class="copyright" hidden="hidden"></ul>
+
+<!-- 添加版权声明》 -->
+
+                                                                                
+                                                                                    <!-- 声明结束 -->
+                                                                                    
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                        
+
+                            
+                                <p class="article-more-link">
+                                    <a class="article-more-a" href="/2020/05/14/Python%E5%AD%97%E7%AC%A6%E4%B8%B2/">
+                                        展开全文 >></a>
+                                </p>
+                                
+
+                                    
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
+</article>
+
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+                
+  
+    <article id="post-Python里的字典" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/13/Python%E9%87%8C%E7%9A%84%E5%AD%97%E5%85%B8/">Python字典里的5个黑魔法</a>
+    </h1>
+  
+
+                    
+                        <a href="/2020/05/13/Python%E9%87%8C%E7%9A%84%E5%AD%97%E5%85%B8/" class="archive-article-date">
+  	<time datetime="2020-05-13T12:38:06.143Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-13</time>
+</a>
+
+                            
+                                <div style="margin-top:10px;margin-bottom:-15px;">
+    
+        
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
+                    
+                        <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">1.1k</span>
+                        </span>
+                        </span>
+
+                        <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">4分</span>
+                        </span>
+                        </span>
+</div>
+                                    
+
+                                        
+            </header>
+            
+                <!-- 目录内容 -->
+                
+                        <!-- 目录内容结束 -->
+                        <div class="article-entry" itemprop="articleBody">
+
+                            <!-- 文章头增加转载声明 -->
+
+                            
+                                
+                                        <div class="topdeclare" hidden="hidden"></div>
+                                        
+
+                                            <!-- 文章头增加转载声明结束 -->
+                                            
+                                                <p>Python里面有3大数据结构：列表，字典和集合.字典是常用的数据结构，里面有一些重要的技巧用法，我把这些都整理到一起,熟练掌握这些技巧之后，对自己的功力大有帮助.</p>
+<h2 id="1-字典的排序"><a href="#1-字典的排序" class="headerlink" title="1.字典的排序:"></a>1.字典的排序:</h2><p>用万金油sorted()函数</p>
+<p>举一个简单的例子</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">my_dict=&#123;<span class="string">"cc"</span>:<span class="number">100</span>,<span class="string">"aa"</span>:<span class="number">200</span>,<span class="string">"bb"</span>:<span class="number">10</span>&#125;</span><br><span class="line">print(sorted(my_dict.items(),key=<span class="keyword">lambda</span> x:x[<span class="number">0</span>]))<span class="comment">#表示按照key排序</span></span><br></pre></td></tr></table></figure>
+                                                    
+                                                            
+
+                                                                        <!-- 版权声明 -->
+                                                                        
+                                                                            <!--添加版权声明-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <ul class="copyright" hidden="hidden"></ul>
+
+<!-- 添加版权声明》 -->
+
+                                                                                
+                                                                                    <!-- 声明结束 -->
+                                                                                    
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                        
+
+                            
+                                <p class="article-more-link">
+                                    <a class="article-more-a" href="/2020/05/13/Python%E9%87%8C%E7%9A%84%E5%AD%97%E5%85%B8/">
+                                        展开全文 >></a>
+                                </p>
+                                
+
+                                    
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
+</article>
+
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+                
+  
+    <article id="post-python基本内置模块 Pro" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/12/python%E5%9F%BA%E6%9C%AC%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97%20Pro/">Python内置模块详解--Pro</a>
+    </h1>
+  
+
+                    
+                        <a href="/2020/05/12/python%E5%9F%BA%E6%9C%AC%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97%20Pro/" class="archive-article-date">
+  	<time datetime="2020-05-12T09:06:54.729Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-12</time>
+</a>
+
+                            
+                                <div style="margin-top:10px;margin-bottom:-15px;">
+    
+        
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
+                    
+                        <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">3.1k</span>
+                        </span>
+                        </span>
+
+                        <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">14分</span>
+                        </span>
+                        </span>
+</div>
+                                    
+
+                                        
+            </header>
+            
+                <!-- 目录内容 -->
+                
+                        <!-- 目录内容结束 -->
+                        <div class="article-entry" itemprop="articleBody">
+
+                            <!-- 文章头增加转载声明 -->
+
+                            
+                                
+                                        <div class="topdeclare" hidden="hidden"></div>
+                                        
+
+                                            <!-- 文章头增加转载声明结束 -->
+                                            
+                                                <h1 id="Python函数合集：足足68个内置函数请收好！"><a href="#Python函数合集：足足68个内置函数请收好！" class="headerlink" title="Python函数合集：足足68个内置函数请收好！"></a>Python函数合集：足足68个内置函数请收好！</h1><p>内置到python版本3.6.2 python一共提供了68个内置函数。内置函数就是python给你提供的，拿来直接用的函数，打印。，输入等。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#68个内置函数</span></span><br><span class="line"><span class="comment"># abs()         　　dict()      　　help()       　　min()       　　setattr()</span></span><br><span class="line"><span class="comment"># all()         　　dir()       　　hex()        　　next()      　　slice() </span></span><br><span class="line"><span class="comment"># any()         　　divmod()    　　id()         　　object()    　　sorted() </span></span><br><span class="line"><span class="comment"># ascii()       　　enumerate() 　　input()      　　oct()       　　staticmethod() </span></span><br><span class="line"><span class="comment"># bin()         　　eval()      　　int()        　　open()      　　str() </span></span><br><span class="line"><span class="comment"># bool()        　　exec()      　　isinstance() 　　ord()       　　sum() </span></span><br><span class="line"><span class="comment"># bytearray()   　　ﬁlter()     　　issubclass() 　　pow()       　　super() </span></span><br><span class="line"><span class="comment"># bytes()       　　ﬂoat()      　　iter()       　　print()     　　tuple() </span></span><br><span class="line"><span class="comment"># callable()    　　format()    　　len()        　　property()  　　type() </span></span><br><span class="line"><span class="comment"># chr()         　　frozenset() 　　list()       　　range()     　　vars() </span></span><br><span class="line"><span class="comment"># classmethod() 　　getattr()   　　locals()     　　repr()      　　zip() </span></span><br><span class="line"><span class="comment"># compile()     　　globals()   　　map()        　　reversed()  　　__import__() </span></span><br><span class="line"><span class="comment"># complex()     　　hasattr()   　　max()        　　round() </span></span><br><span class="line"><span class="comment"># delattr()     　　hash()      　　memoryview() 　　set()</span></span><br></pre></td></tr></table></figure>
+                                                    
+                                                            
+
+                                                                        <!-- 版权声明 -->
+                                                                        
+                                                                            <!--添加版权声明-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <ul class="copyright" hidden="hidden"></ul>
+
+<!-- 添加版权声明》 -->
+
+                                                                                
+                                                                                    <!-- 声明结束 -->
+                                                                                    
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                        
+
+                            
+                                <p class="article-more-link">
+                                    <a class="article-more-a" href="/2020/05/12/python%E5%9F%BA%E6%9C%AC%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97%20Pro/">
+                                        展开全文 >></a>
+                                </p>
+                                
+
+                                    
+                                                <div class="clearfix"></div>
+        </div>
+        </div>
+</article>
+
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+                
+  
+    <article id="post-python基本内置模块" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/10/python%E5%9F%BA%E6%9C%AC%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97/">Python内置模块简介</a>
+    </h1>
+  
+
+                    
+                        <a href="/2020/05/10/python%E5%9F%BA%E6%9C%AC%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97/" class="archive-article-date">
+  	<time datetime="2020-05-10T09:19:17.670Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-10</time>
+</a>
+
+                            
+                                <div style="margin-top:10px;margin-bottom:-15px;">
+    
+        
+            <span class="article-type" style="
+          color: white;
+          font-size: 14px;
+          background: #bf59f3;
+          padding: 0 5px 1px 5px;
+          margin-right: 5px;
+          border-radius: 2px;">原创</span>
+            
+                    
+                        <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  字数统计: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">934</span>
+                        </span>
+                        </span>
+
+                        <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 15px;color: navy">  阅读时长: </span>
+                        <span class="post-count" style="font-size: 14px;color: navy">4分</span>
+                        </span>
+                        </span>
+</div>
+                                    
+
+                                        
+            </header>
+            
+                <!-- 目录内容 -->
+                
+                        <!-- 目录内容结束 -->
+                        <div class="article-entry" itemprop="articleBody">
+
+                            <!-- 文章头增加转载声明 -->
+
+                            
+                                
+                                        <div class="topdeclare" hidden="hidden"></div>
+                                        
+
+                                            <!-- 文章头增加转载声明结束 -->
+                                            
+                                                <h1 id="一、-跟计算相关的"><a href="#一、-跟计算相关的" class="headerlink" title="一、 跟计算相关的"></a>一、 跟计算相关的</h1><h2 id="1-abs-20-取绝对值"><a href="#1-abs-20-取绝对值" class="headerlink" title="1.abs(-20)  取绝对值"></a>1.abs(-20)  取绝对值</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">abs(<span class="number">-20</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>20</code></pre>
+                                                    
+                                                            
+
+                                                                        <!-- 版权声明 -->
+                                                                        
+                                                                            <!--添加版权声明-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <ul class="copyright" hidden="hidden"></ul>
+
+<!-- 添加版权声明》 -->
+
+                                                                                
+                                                                                    <!-- 声明结束 -->
+                                                                                    
+        </div>
+        <div class="article-info article-info-index">
+            
+                    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                        
+
+                            
+                                <p class="article-more-link">
+                                    <a class="article-more-a" href="/2020/05/10/python%E5%9F%BA%E6%9C%AC%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97/">
                                         展开全文 >></a>
                                 </p>
                                 
@@ -490,7 +1568,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">« Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/">« Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next »</a>
     </nav>
   
 
@@ -503,7 +1581,7 @@
         <div id="footer-info">
             <div class="footer-left" style="color:#04338c;">
                 <i class='fa fa-copyright'></i> 2018-
-                2020
+                2021
                     Caizhihao
             </div>
             <div class="footer-right" style="color:#04338c;">
@@ -598,15 +1676,31 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Pandas</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">可视化绘图</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">每日一题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">递归&分治</a>
               </li>
             
             <div class="clearfix"></div>
